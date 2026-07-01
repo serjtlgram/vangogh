@@ -1,0 +1,16 @@
+# Зависимости Node.js (если используются)
+node_modules/
+
+# Системные файлы macOS
+.DS_Store
+
+# Системные файлы Windows
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Логи
+*.log
