@@ -1370,29 +1370,29 @@ async function runPotatoAnimationSequence() {
 
   // Sequence
   if (!potatoLayerActive) return;
-  await playRectSweeper(getRect(5), 1000);
+  await playRectSweeper(getRect(5), 500);
   if (!potatoLayerActive) return;
-  await playLineSweeper(lines[0], 400); // 5->3
+  await playLineSweeper(lines[0], 200); // 5->3
   if (!potatoLayerActive) return;
-  await playRectSweeper(getRect(3), 800);
+  await playRectSweeper(getRect(3), 400);
   if (!potatoLayerActive) return;
-  await playLineSweeper(lines[1], 500); // 3->1
+  await playLineSweeper(lines[1], 250); // 3->1
   if (!potatoLayerActive) return;
-  await playRectSweeper(getRect(1), 1000);
+  await playRectSweeper(getRect(1), 500);
   if (!potatoLayerActive) return;
   
   // Split parallel
-  playLineSweeper(lines[2], 300).then(() => {
-    if (potatoLayerActive) playRectSweeper(getRect(2), 800);
+  playLineSweeper(lines[2], 150).then(() => {
+    if (potatoLayerActive) playRectSweeper(getRect(2), 400);
   });
-  await playLineSweeper(lines[3], 300); // 1->6
+  await playLineSweeper(lines[3], 150); // 1->6
   if (!potatoLayerActive) return;
   
-  await playRectSweeper(getRect(6), 800);
+  await playRectSweeper(getRect(6), 400);
   if (!potatoLayerActive) return;
-  await playLineSweeper(lines[4], 500); // 6->4
+  await playLineSweeper(lines[4], 250); // 6->4
   if (!potatoLayerActive) return;
-  await playRectSweeper(getRect(4), 800);
+  await playRectSweeper(getRect(4), 400);
 
   // Show toggle and contact link
   setTimeout(() => {
