@@ -55,6 +55,8 @@ const TRANSLATIONS = {
     pot5_title: 'ВІРА ТА БОГ', pot5_desc: 'єдині свідки їхніх страждань.',
     pot6_title: 'ПІДГНИЛА ПЕЧЕНА КАРТОПЛЯ', pot6_desc: 'нагорода за тяжку працю.',
     detailsToggle: 'Деталі',
+    mobile_title: 'Тільки для ПК',
+    mobile_desc: 'Цей сайт створено як імерсивний досвід, який найкраще працює на великих екранах.<br>Будь ласка, відкрийте сайт на своєму ноутбуці або ПК для повного занурення.',
   },
   en: {
     lang: 'EN',
@@ -83,6 +85,8 @@ const TRANSLATIONS = {
     pot5_title: 'FAITH AND GOD', pot5_desc: 'the only witnesses to their suffering.',
     pot6_title: 'ROTTEN BAKED POTATOES', pot6_desc: 'the reward for hard labor.',
     detailsToggle: 'Details',
+    mobile_title: 'PC Only',
+    mobile_desc: 'This site is designed as an immersive experience best viewed on large screens.<br>Please open the site on your laptop or PC for full immersion.',
   },
   es: {
     lang: 'ES',
@@ -111,6 +115,8 @@ const TRANSLATIONS = {
     pot5_title: 'LA FE Y DIOS', pot5_desc: 'los únicos testigos de su sufrimiento.',
     pot6_title: 'PAPAS ASADAS PODRIDAS', pot6_desc: 'la recompensa por el trabajo duro.',
     detailsToggle: 'Detalles',
+    mobile_title: 'Solo PC',
+    mobile_desc: 'Este sitio está diseñado como una experiencia inmersiva que se ve mejor en pantallas grandes.<br>Por favor, abra el sitio en su computadora portátil o PC para una inmersión total.',
   },
   pt: {
     lang: 'PT',
@@ -139,6 +145,8 @@ const TRANSLATIONS = {
     pot5_title: 'FÉ E DEUS', pot5_desc: 'os únicos testemunhos de seu sofrimento.',
     pot6_title: 'BATATAS ASSADAS PODRES', pot6_desc: 'a recompensa pelo trabalho árduo.',
     detailsToggle: 'Detalhes',
+    mobile_title: 'Apenas PC',
+    mobile_desc: 'Este site foi projetado como uma experiência imersiva melhor visualizada em telas grandes.<br>Por favor, abra o site em seu laptop ou PC para imersão total.',
   },
   ru: {
     lang: 'RU',
@@ -167,6 +175,8 @@ const TRANSLATIONS = {
     pot5_title: 'ВЕРА И БОГ', pot5_desc: 'единственные свидетели их страданий.',
     pot6_title: 'ПОДГНИВШИЙ ПЕЧЁНЫЙ КАРТОФЕЛЬ', pot6_desc: 'награда за тяжкий труд.',
     detailsToggle: 'Детали',
+    mobile_title: 'Только для ПК',
+    mobile_desc: 'Этот сайт создан как иммерсивный опыт, который лучше всего работает на больших экранах.<br>Пожалуйста, откройте сайт на своем ноутбуке или ПК для полного погружения.',
   },
 };
 
@@ -235,7 +245,7 @@ function applyLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     if (t[key] !== undefined) {
-      if (key === 'desc') {
+      if (key === 'desc' || key === 'mobile_desc') {
         el.innerHTML = t[key].replace(/\n/g, '<br>');
       } else {
         el.textContent = t[key];
