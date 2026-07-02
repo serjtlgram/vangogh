@@ -304,7 +304,7 @@ body.modal-open #progress-bar {
 }
 
 /* ── LANGUAGE SWITCHER ── */
-.lang-switcher { position:relative; flex-shrink:0; cursor:pointer; }
+.lang-switcher { position:relative; flex-shrink:0; cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important; }
 #lang-btn {
   border: 1px solid #5c3a21; /* Коричневая обводка */
   border-radius: 4px;
@@ -337,7 +337,7 @@ body.modal-open #progress-bar {
   padding:10px 18px;
   font-family:'Cinzel',serif; font-size:11px; letter-spacing:2px;
   font-weight: 700; /* Жирный шрифт в выпадающем меню */
-  color: rgba(255,255,255,.8); cursor:pointer;
+  color: rgba(255,255,255,.8); cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
   transition:background .2s, color .2s; text-align:center;
 }
 .lang-dropdown button:hover,
@@ -405,7 +405,7 @@ body.modal-open #progress-bar {
   overflow: hidden;
   flex: 1;
   max-width: 200px;              /* portrait-rectangle: высота > ширины */
-  cursor: pointer;
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
   border: 1px solid rgba(255,255,255,.09);
   box-shadow:
     0 6px 28px rgba(0,0,0,.75),
@@ -629,7 +629,7 @@ body.modal-open #progress-bar {
   height: 0;
   transform: translate(-50%, -50%);
   z-index: 10;
-  cursor: pointer;
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
   pointer-events: none; /* События идут на дочерние элементы */
 }
 
@@ -686,7 +686,7 @@ body.modal-open #progress-bar {
 /* ── Невидимая попап-зона (для первой иконки слева) ── */
 .pin-popup-zone {
   position: absolute;
-  cursor: pointer;
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
   z-index: 12;
   background: transparent;
   pointer-events: auto; /* Включаем события мыши, пробивая pointer-events:none у контейнера */
@@ -795,7 +795,7 @@ body.modal-open #progress-bar {
   border: none;
   outline: none; /* Убираем квадратную системную рамку при фокусе */
   color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
   z-index: 10;
   padding: 6px;
   display: flex;
@@ -888,7 +888,7 @@ body.modal-open #progress-bar {
 /* --- Иконка информации --- */
 .info-icon {
   color: rgba(255, 255, 255, 0.35);
-  cursor: pointer; /* Делаем курсор интерактивным */
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important; /* Делаем курсор интерактивным */
   transition: color 0.2s, transform 0.3s, filter 0.3s;
   display: flex;
   align-items: center;
@@ -1235,7 +1235,7 @@ body:has(#cal-panel) .pin-popup-zone {
   opacity: 1;
 }
 .potato-frame {
-  cursor: pointer;
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
   pointer-events: auto;
 }
 
@@ -1292,7 +1292,7 @@ body:has(#cal-panel) .pin-popup-zone {
   display: inline-block;
   width: 44px;
   height: 24px;
-  cursor: pointer;
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
 }
 .ptoggle-switch input {
   opacity: 0;
@@ -1301,7 +1301,7 @@ body:has(#cal-panel) .pin-popup-zone {
 }
 .ptoggle-track {
   position: absolute;
-  cursor: pointer;
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
   top: 0; left: 0; right: 0; bottom: 0;
   background-color: rgba(0,0,0,0.6);
   border: 1px solid rgba(201,168,76,0.4);

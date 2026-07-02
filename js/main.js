@@ -1101,7 +1101,7 @@ if (new URLSearchParams(location.search).has('calibrate')) {
   [calCopy, calClear].forEach(btn => Object.assign(btn.style, {
     marginTop: '8px', marginRight: '6px', padding: '6px 12px',
     background: 'rgba(201,168,76,0.15)', border: '1px solid rgba(201,168,76,0.4)',
-    borderRadius: '6px', color: '#f0d898', cursor: 'pointer', fontSize: '11px', fontWeight: 'bold'
+    borderRadius: '6px', color: '#f0d898', cursor: "url('images/brush-cursor-pointer.svg') 2 2, pointer !important", fontSize: '11px', fontWeight: 'bold'
   }));
 }
 
