@@ -437,6 +437,22 @@ body.modal-open #progress-bar {
   transform: scale(1.06);
 }
 
+.painting-card .hover-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  display: block;
+  opacity: 0;
+  transition: opacity .45s ease, transform .45s ease;
+  z-index: 1;
+}
+.painting-card:hover .hover-video {
+  opacity: 1;
+  transform: scale(1.06);
+}
+
 /* Нижний градиент + текст */
 .painting-overlay {
   position: absolute;
@@ -449,6 +465,7 @@ body.modal-open #progress-bar {
     transparent 100%
   );
   text-align: center;
+  z-index: 2;
 }
 
 .painting-title {

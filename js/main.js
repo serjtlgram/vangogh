@@ -1598,4 +1598,15 @@ if (new URLSearchParams(location.search).has('calibrate-potato')) {
   }, 1000);
 }
 
-
+// Hover video logic for painting cards
+document.querySelectorAll('.painting-card').forEach(card => {
+  const vid = card.querySelector('video.hover-video');
+  if (vid) {
+    card.addEventListener('mouseenter', () => {
+      vid.play().catch(()=>{});
+    });
+    card.addEventListener('mouseleave', () => {
+      vid.pause();
+    });
+  }
+});
