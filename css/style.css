@@ -9,6 +9,14 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-user-select: none;
   user-select: none;
+  cursor: url('../images/brush-cursor.svg') 2 2, auto;
+}
+
+/* Custom Interactive Cursors */
+a, button, [role="button"], input, select, textarea, label,
+.interactive, .lang-switcher, .volume-icon, .close-btn, .next-btn, .prev-btn,
+.hotspot, .info-marker, .marker, .calendar-btn, .pin-item, .tab {
+  cursor: url('../images/brush-cursor-pointer.svg') 2 2, pointer !important;
 }
 
 /* ── PREVENT LAYOUT SHIFT WHEN MODAL OPENS ── */
@@ -256,7 +264,7 @@ body.modal-open #progress-bar {
 /* ── DISABLED NAV LINKS TOOLTIP ── */
 .nav-links a.nav-disabled {
   position: relative;
-  cursor: default !important;
+  cursor: url('../images/brush-cursor.svg') 2 2, default !important;
 }
 .nav-links a.nav-disabled::after {
   display: none !important; /* Убираем белую линию подчеркивания при наведении */
